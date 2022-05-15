@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400;700&display=swap');
+        body {
+            /*Busca uma fonte alternativa caso não encontre a anterior, separando as alternativasn por virgulas*/
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            /*
+            - FONTES -
+            Medidas absolutas:
+            cm, mm, in, px, pt, pc
+
+            Medidas relativas:
+            em, ex, rem, vm, vh, %
+
+            Recomendação da W3C: 
+            px, em
+
+            16px - tamanho padrão da fonte
+            1em - tamanho padrão da fonte
+            2em - dobro do tamanho padrão (e assim por diante)
+            */
+            font-size: 1em;
+            font-weight: 700;
+            /*Lighter, light, normal, bold, bolder*/
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        h1 {
+            /*
+            Shorthand:
+            como atalho às delarações acima, é possível usar o atributo 'font'
+            sintáxe:
+            font: {font-style} {font-weight} {font-size} {font-family}
+            */
+            font: italic bolder 3rem 'Work Sans'
+        }
+
+        h2 {
+            font: bolder 3rem 'Work Sans'
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos iste maiores voluptatibus eum cupiditate veniam, exercitationem quis dicta doloribus explicabo, nihil eius! Magni iste possimus nisi aperiam temporibus repellendus quo! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut atque est laboriosam voluptatibus vero iusto nisi, doloribus dolore, dignissimos voluptatum asperiores exercitationem, saepe voluptas excepturi necessitatibus. Vero nostrum eos harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ipsam soluta possimus aut fugit cupiditate vel impedit, et consequatur excepturi officia odio similique ratione cumque beatae harum deserunt quos voluptatum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corrupti itaque ipsum autem cumque in commodi accusamus obcaecati atque neque sunt repudiandae aspernatur veritatis, harum fuga iste necessitatibus veniam quasi.
+        </p>
+        <h2>Subtitulo do exercicio</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum fuga sit reiciendis nesciunt dolorem provident, exercitationem dolorum, quisquam expedita asperiores mollitia ex saepe! Voluptate libero expedita repudiandae! Fuga, nobis ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia saepe ratione ipsam totam possimus suscipit porro quia accusamus, amet cupiditate quis quidem maxime corrupti perferendis commodi earum itaque dolor! Eligendi?
+            </p>
+</body>
+</html>

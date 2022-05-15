@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/*
+    Em HTML ID é referenciado como # (só pode um elemento id com mesmo nome por documento)
+    Em HTML class é referenciado como .
+    O que for ligado antes no CSS é priorizado entre id e class
+*/
+
+body {
+    background-color: rgb(215, 255, 155);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(4, 109, 0);
+}
+
+h1#principal {
+    text-align: center;
+    background-color: white;
+}
+
+.destaque {
+    background-color: #b8b8369a;
+}
+
+.basico {
+    background-color: aqua;
+}
+
+h2 {
+    color: rgb(73, 100, 71)
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #95a8ca;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        header {
+            background-color: white;
+            border-radius: 0 0 20px 20px;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        #assuntos {
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 0px 10px 10px 10px;
+            text-align: center;
+            box-shadow: 3px 3px 6px 0px #00000054;
+        }
+
+        #assuntos > a:hover {
+            color: #d8d5d5;
+        }
+
+        #assuntos > a {
+            margin-left: 10px;
+        }
+
+        #assuntos > a:first-child {
+            margin-left: 0px;
+        }
+        
+        #noticias {
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 0px 10px 10px 10px;
+            box-shadow: 3px 3px 6px 0px #00000054;
+        }
+
+        #noticias > h2 {
+            margin: 10px;
+            
+        }
+
+        #noticias > p {
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: justify;
+        }
+
+        #noticias > article {
+            margin-left: 10px;
+            margin-right: 10px
+        }
+
+        nav {
+            text-align: center;
+            background-color: white;
+            border-radius: 20px 20px 0 0;
+            padding: 20px;
+        }
+
+        button {
+            margin-left: 80px;
+            border: none;
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        button:hover {
+            background-color: #d8d5d5;
+        }
+
+        button:first-child {
+            margin-left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>App de notícias totalmente verídicas</h1>
+    </header>
+    <main>
+        <section id="assuntos">
+            <a href="#">Tecnologia</a>
+            <a href="#">Politica</a>
+            <a href="#">Abobrinha</a>
+        </section>
+        <section id="noticias">
+            <h2>Deu ruim no brasil</h2>
+            <p>
+                Já tava ruim há muito tempo atrás, porém, para a surpresa de o total de 0 pessoas, piorou. Eis o motivo: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero beatae fugiat cumque, sapiente minima quibusdam, fugit, error dignissimos quidem quae incidunt excepturi facere doloremque maiores mollitia commodi laudantium asperiores iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ad iusto aspernatur commodi labore optio dolore autem aperiam quasi a, sunt necessitatibus recusandae tempora nisi repudiandae perspiciatis numquam voluptas. Explicabo.
+            </p>
+            <article>
+                Autor: DJ Cleito Rasta
+            </article>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <button>
+                <a href="#">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" width="20" alt="">
+                </a>
+            </button>
+            <button>
+                <a href="#">
+                    <img src="https://cdn-icons.flaticon.com/png/512/3031/premium/3031293.png?token=exp=1651597618~hmac=a8690b704dfd5aedff86b8dabb663a07" width="20" alt="">
+                </a>
+            </button>
+            <button>
+                <a href="#">
+                    <img src="https://cdn-icons.flaticon.com/png/512/2976/premium/2976215.png?token=exp=1651597740~hmac=8d7349b68eb90e351e6a6980cfd957a5" width="20" alt="">
+                </a>
+            </button>
+        </nav>
+    </footer>
+</body>
+</html>
