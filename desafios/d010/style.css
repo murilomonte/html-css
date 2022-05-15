@@ -176,17 +176,6 @@ aside h3 {
     margin: 0 -28px;
 }
 
-/*
-aside > p {
-    padding-left: 28px;
-    padding-right: 28px;
-}
-
-aside > p:last-child {
-    margin-bottom: 0px;
-    padding-bottom: 28px;
-} */
-
 aside ul {
     list-style-position: inside;
     list-style-type: "\2414";
