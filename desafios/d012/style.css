@@ -78,6 +78,7 @@ div#ft2 {
 
 footer {
     font-family: var(--fonte3);
+    text-align: center;
     background-color: black;
     color: white;
     padding: 16px;
