@@ -53,7 +53,7 @@ div.fb {
 }
 
 div#ft1 { /*color > image > position > repeat > size > attachment*/
-    background: black url('imagens/background001.jpg') center center;
+    background: black url('imagens/background001.jpg') right center;
     background-attachment: fixed;
     padding: 113px 16px;
     font-family: var(--fonte2);
@@ -61,7 +61,7 @@ div#ft1 { /*color > image > position > repeat > size > attachment*/
 }
 
 div#ft2 {
-    background: black url('imagens/background002.jpg') center center;
+    background: black url('imagens/background002.jpg') right center;
     background-attachment: fixed;
     padding: 113px 16px;
     font-family: var(--fonte2);
