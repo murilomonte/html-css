@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
 :root {
     --fonte1: 'Passion One', cursive;
@@ -9,15 +13,11 @@
     --fonte3: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body { 
-    margin: 0px;
-    
+html, body { 
+    min-height: 100vh;
+    background-color: darkgray;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
 
 header {
     background-color: black;
@@ -25,14 +25,25 @@ header {
     text-align: center;
 }
 
-h1 {
+header > h1 {
     font-family: var(--fonte1);
     font-weight: normal;
+    font-variant: small-caps;
     margin: 0px;
     padding: 50px;
     padding-bottom: 0px;
     font-size: 10vw;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 
 header > p {
     font-family: var(--fonte3);
@@ -41,13 +52,20 @@ header > p {
     padding-bottom: 50px;
 }
 
+main > div {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 16px;
+    line-height: 2em;
+}
+
 div.fb {
     background-color: white;
    /* margin-top: 135px;
     margin-bottom: 135px;*/
     padding-left: 30px;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    /*padding-top: 90px;
+    padding-bottom: 90px;*/
     font-family: var(--fonte2);
     font-size: 1.3rem;
 }
@@ -55,7 +73,6 @@ div.fb {
 div#ft1 { /*color > image > position > repeat > size > attachment*/
     background: black url('imagens/background001.jpg') right center;
     background-attachment: fixed;
-    padding: 113px 16px;
     font-family: var(--fonte2);
     font-size: 1.3rem;
 }
@@ -63,7 +80,6 @@ div#ft1 { /*color > image > position > repeat > size > attachment*/
 div#ft2 {
     background: black url('imagens/background002.jpg') right center;
     background-attachment: fixed;
-    padding: 113px 16px;
     font-family: var(--fonte2);
     font-size: 1.3rem;
 }
