@@ -70,18 +70,22 @@ div.fb {
     font-size: 1.3rem;
 }
 
-div#ft1 { /*color > image > position > repeat > size > attachment*/
-    background: black url('imagens/background001.jpg') right center;
-    background-attachment: fixed;
+div.imagem {
     font-family: var(--fonte2);
     font-size: 1.3rem;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.527)
+}
+
+div#ft1 { /*color > image > position > repeat > size > attachment*/
+    background: black url('imagens/background001.jpg') right center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 div#ft2 {
     background: black url('imagens/background002.jpg') right center;
-    background-attachment: fixed;
-    font-family: var(--fonte2);
-    font-size: 1.3rem;
+    background-size: cover;
+    background-attachment: fixed;6
 }
 
 #ft1 > p, #ft2 > p {
@@ -89,7 +93,7 @@ div#ft2 {
     background-color: rgba(0, 0, 0, 0.397);
     color: white;
     padding: 10px 5px;
-    margin: 0px
+    margin: 0px;
 }
 
 footer {
