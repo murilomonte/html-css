@@ -85,7 +85,7 @@ div#ft1 { /*color > image > position > repeat > size > attachment*/
 div#ft2 {
     background: black url('imagens/background002.jpg') right center;
     background-size: cover;
-    background-attachment: fixed;6
+    background-attachment: fixed;
 }
 
 #ft1 > p, #ft2 > p {
