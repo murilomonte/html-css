@@ -21,6 +21,15 @@
         .num {
             text-align: right;
         }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(even)  { /*odd = impar; even = par*/
+            background-color: lightgray;
+        }
     </style>
 </head>
 <body>
@@ -35,10 +44,11 @@
             TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px">População</th>
             </tr>
         </thead>
         <tbody> <!--Vou fazer tudo não :)-->
@@ -57,7 +67,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>84.352.773</strong></td>
             </tr>
         </tfoot>
