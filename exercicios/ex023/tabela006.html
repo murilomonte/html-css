@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas resposivas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: gray;
+        }
+
+        #container {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus quos libero, sint voluptates perferendis exercitationem debitis odio, rerum, unde culpa maiores? Laudantium officia tempora ea itaque placeat! Cumque, fugiat natus!
+        </p>
+        <div id="container">
+            <table>
+                <caption>Tabela responsiva</caption>
+                <theader>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Jan</th>
+                        <th>Fev</th>
+                        <th>Mar</th>
+                        <th>Abr</th>
+                        <th>Mai</th>
+                        <th>Jun</th>
+                        <th>Jul</th>
+                        <th>Ago</th>
+                        <th>Set</th>
+                        <th>Out</th>
+                        <th>Nov</th>
+                        <th>Dez</th>
+                    </tr>
+                </theader>
+                <tbody>
+                    <tr>
+                        <td colspan="13">Preguiça</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+</body>
+</html>
