@@ -13,10 +13,19 @@
 </head>
 <body>
     <h1>Meu primeiro Formulário</h1>
-    <form action="">
-        <p>Nome <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome <input type="text" name="nome" id="nome"></p>
-        <p><input type="submit" value="enviar"></p>
+    <form action="cadastro.php" autocomplete="off">
+        <p>
+            <!-- for = id do input -->
+            <label for="inome">Nome </label>
+            <!-- Name = mais útil  o php e Id = mais útil no javascript -->
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p>
+            <input type="submit" value="enviar">
+        </p>
     </form>
 </body>
 </html>
