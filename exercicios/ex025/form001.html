@@ -13,8 +13,18 @@
 </head>
 <body>
     <h1>Meu primeiro Formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <!-- method = GET ou POST; no method get os dados são acessados pela url, já no post os dados podem ser acessados pelos cabeçalhos -->
+
+    <!--
+        GET para quando os dados não forem confidenciais;
+            não envia arquivos e tem limite até 3mil bytes
+
+        POST para quando os dados forem confidenciais e precisarem de segurança.
+            
+    -->
+    <form action="cadastro.php" method="POST" autocomplete="off">
         <p>
+            <!-- label serve para dar uma relação do título ao input -->
             <!-- for = id do input -->
             <label for="inome">Nome </label>
             <!-- Name = mais útil  o php e Id = mais útil no javascript -->
