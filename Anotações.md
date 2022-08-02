@@ -122,3 +122,89 @@ Que podem ser usados em maneira menor com uma shorthand:
 ```css
 background: {color} {image} {position} {repeat} {size} {attachment};
 ```
+## ex023
+
+### tabelas
+
+hierarquia de uma tabela simples: <br>
+
+<pre>
+TABLE = tabela
+        TABLE ROW = linha de tabela
+            TABLE HEADER = cabeçalho da tabela
+            TABLE DATA = dado da tabela
+</pre>
+
+## ex025
+
+### formulários
+
+sintáxe:
+
+```html
+<form action="" method="">
+    <label for=""></label>
+    <input type="">
+<form>
+```
+Observações: <br>
+
+****
+
+method <code>GET</code> ou <code>POST</code>?
+> no method get os dados são acessados pela url, já no post os dados podem ser acessados pelos cabeçalhos
+
+então
+
+<code>GET</code> para quando os dados não forem confidenciais: <br>
+> não envia arquivos e tem limite até 3mil bytes
+
+<code>POST</code> para quando os dados forem confidenciais e precisarem de segurança.
+
+****
+
+label serve para dar uma relação do título ao input
+
+for = id do input
+
+Name = mais útil  o php e Id = mais útil no javascript
+
+****
+
+### atributos para formulários
+Para alguns formulários é possível usar atributos para customizá-los. Exemplos:
+
+para que o input seja necessário para o envio do formulário
+
+> required
+
+quantidade mínima de caracteres para que seja enviado
+
+>minlength=""
+
+quantidade máxima de caracteres para que seja enviado
+
+> maxlength=""
+
+texto que aparecerá dentro do input
+
+> placeholder=""
+
+para que o navegador use a função de autocompletar as informações
+
+> autocomplete=""
+
+número máximo para o input (somente <code>type="number"</code>)
+
+> max=""
+
+a quantidade que será adicionada ao clicar na setinha do input <code>type="number"</code> 
+
+> step=""
+
+valor padrão para o input <code>type="month"</code> (parecido com o <code>placeholder=""</code>)
+
+> value=""
+
+algo como "um padrão para os dados do input" (Estudar mais sobre RegEx)
+> partern=""
