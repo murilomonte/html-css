@@ -35,3 +35,90 @@ print('Fim do programa')</code>
 ### citações
 Usa-se &lt;q&gt; para mostrar citações (com asas duplas)
 > Como diria o pai do amigo do professor: <q>o computador é um burro muito rápido</q>
+
+## ex009
+### Listas
+Para usar lista é usado &lt;ol&gt; (para lista ordenadas) e &lt;ul&gt; (para listas não ordernadas) sendo usado os parâmetros: <br>
+> <code>type=""</code> para escolher o tipo de representação da lista. ex: <code>1, A, a, I, i.</code> (somente listas ordenadas) ou <code>disc, square ou circle.</code> (somente listas não ordenadas) <br>
+<code>start=""</code> para escolher em qual posição a lista vai começar (somente ol)
+
+## ex16.1
+
+### gradientes em css
+
+``` css
+body {
+    /*background-image: radial-gradient(circle, #5b52c9, #d63086, #fed272);*/
+    background-image: linear-gradient(-45deg, #5b52c9, #d63086, #fed272);
+    background-attachment: fixed;
+}
+```
+## ex017
+
+### fontes
+
+### medidas
+
+Medidas absolutas:
+> cm, mm, in, px, pt, pc
+
+Medidas relativas: 
+> em, ex, rem, vm, vh, %
+
+Recomendação da W3C:
+> px, em
+
+Detalhes importantes
+> 16px - tamanho padrão da fonte <br>
+1em - tamanho padrão da fonte <br>
+2em - dobro do tamanho padrão (e assim por diante)
+
+### Shorthand
+
+É possível usar o atributo 'font' como shorthand. <br>
+sintáxe:
+```css
+font: {font-style} {font-weight} {font-size} {font-family}
+```
+
+### Fontes externas
+
+Para usarmos fontes externas no css, usa-se o seguinte trecho de código: <br>
+``` css
+@font-face {
+    font-family: 'London'; /*Nome da fonte importada*/
+    src: url(Olondon_.otf), url(OldLondon.ttf); /*Localização*/
+    font-weight: normal; /*Tamanho*/
+    font-style: normal; /*Estilo*/
+    /*
+        Tipos de format()
+        - opentype (quando é otf);
+        - truetype (quando é ttf);
+        - embedded-opentype;
+        - truetype-aat (Apple Advanced Typography)
+        - svg
+    */
+}
+```
+
+## ex022
+
+### backgrounds em css
+
+o elemento background tem os seguintes atributos: <br>
+
+```css
+background-color: black;
+background-image: url('imagens/wallpaper002.jpg'); 
+background-position: center center;
+background-repeat: no-repeat; 
+background-size: cover; 
+background-attachment: fixed; 
+
+```
+
+Que podem ser usados em maneira menor com uma shorthand:
+
+```css
+background: {color} {image} {position} {repeat} {size} {attachment};
+```
