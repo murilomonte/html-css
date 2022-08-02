@@ -4,7 +4,7 @@ Curso de html 5 e css 3
 Estou aprendendo a criar sites através do curso de HTML5 e CSS3 do <a href="https://cursoemvideo.com">Curso em Video</a>!!
 
 ## projetos
-Veja os projetos que fiz durante o curso no meu <a href="https://github.com/murilomonte">repositório</a> :)
+Veja os projetos que fiz durante o curso no meu <a href="https://github.com/murilomonte">perfil</a> :)
 
 ## curso
 
