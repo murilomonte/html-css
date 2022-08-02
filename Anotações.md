@@ -176,35 +176,36 @@ Para alguns formulários é possível usar atributos para customizá-los. Exempl
 
 para que o input seja necessário para o envio do formulário
 
-> required
+<code>required</code>
 
 quantidade mínima de caracteres para que seja enviado
 
->minlength=""
+<code>minlength=""</code>
 
 quantidade máxima de caracteres para que seja enviado
 
-> maxlength=""
+<code>maxlength=""</code>
 
 texto que aparecerá dentro do input
 
-> placeholder=""
+<code>placeholder=""</code>
 
 para que o navegador use a função de autocompletar as informações
 
-> autocomplete=""
+<code>autocomplete=""</code>
 
 número máximo para o input (somente <code>type="number"</code>)
 
-> max=""
+<code>max=""</code>
 
 a quantidade que será adicionada ao clicar na setinha do input <code>type="number"</code> 
 
-> step=""
+<code>step=""</code>
 
 valor padrão para o input <code>type="month"</code> (parecido com o <code>placeholder=""</code>)
 
-> value=""
+<code>value=""</code>
 
 algo como "um padrão para os dados do input" (Estudar mais sobre RegEx)
-> partern=""
+
+<code>partern=""</code>
