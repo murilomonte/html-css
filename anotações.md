@@ -147,9 +147,21 @@ sintáxe:
     <input type="">
 <form>
 ```
-Observações: <br>
+****
+
+### Inputs importantes e algumas caracteristicas:
+
+Para adicionar checkbox de seleção única, é preciso usar: <br>
+> <code>input:radio</code> <br>
+
+sendo importante que <code>name=""</code> de ambos os inputs devem ter o mesmo valor
+
+Para adicionar checkbox, usa-se: <br>
+> <code>input:checkbox</code>
 
 ****
+
+### Observações: <br>
 
 method <code>GET</code> ou <code>POST</code>?
 > no method get os dados são acessados pela url, já no post os dados podem ser acessados pelos cabeçalhos
@@ -176,36 +188,42 @@ Para alguns formulários é possível usar atributos para customizá-los. Exempl
 
 para que o input seja necessário para o envio do formulário
 
-<code>required</code>
+> <code>required</code>
 
 quantidade mínima de caracteres para que seja enviado
 
-<code>minlength=""</code>
+> <code>minlength=""</code>
 
 quantidade máxima de caracteres para que seja enviado
 
-<code>maxlength=""</code>
+> <code>maxlength=""</code>
 
 texto que aparecerá dentro do input
 
-<code>placeholder=""</code>
+> <code>placeholder=""</code>
 
 para que o navegador use a função de autocompletar as informações
 
-<code>autocomplete=""</code>
+> <code>autocomplete=""</code>
 
 número máximo para o input (somente <code>type="number"</code>)
 
-<code>max=""</code>
+> <code>max=""</code>
 
 a quantidade que será adicionada ao clicar na setinha do input <code>type="number"</code> 
 
-<code>step=""</code>
+> <code>step=""</code>
 
 valor padrão para o input <code>type="month"</code> (parecido com o <code>placeholder=""</code>)
 
-<code>value=""</code>
+> <code>value=""</code>
 
 algo como "um padrão para os dados do input" (Estudar mais sobre RegEx)
 
-<code>partern=""</code>
+> <code>partern=""</code>
+
+para que os input de <code>checkbox</code> e <code>radio</code> já tenham algo marcado por padrão
+
+> <code>checked</code>
+
+## ex
