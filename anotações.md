@@ -159,6 +159,12 @@ sendo importante que <code>name=""</code> de ambos os inputs devem ter o mesmo v
 Para adicionar checkbox, usa-se: <br>
 > <code>input:checkbox</code>
 
+para adicionar cores, usa-se o input:
+> <code>input:color</code>
+
+para adicionar uma barra de avaliação, por exemplo, usa-se o input:
+> <code>input:range</code>
+
 ****
 
 ### Observações: <br>
@@ -172,6 +178,7 @@ então
 > não envia arquivos e tem limite até 3mil bytes
 
 <code>POST</code> para quando os dados forem confidenciais e precisarem de segurança.
+> envia arquivos e não tem limite
 
 ****
 
