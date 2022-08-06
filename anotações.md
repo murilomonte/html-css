@@ -188,6 +188,15 @@ para adicionar uma caixa de mensagens, usa-se o elemento/input com a seguinte si
 <label for=""></label>
 <textarea name="" id="" cols="30" rows="10" placeholder=""></textarea>
 ```
+o comando output serve para devolver resultados de um input automaticamente. usa-se a seguinte sintáxe:
+```html
+<label for=""></label>
+<input type="number" name="" id="" oninput="codigo-ou-funcão-javascript">
+
+<!-- valor onde será mostrado a saída do input -->
+<label for=""></label>
+<output id=""></output>
+```
 ****
 
 ### Observações: <br>
