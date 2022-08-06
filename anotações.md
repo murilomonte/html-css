@@ -165,6 +165,29 @@ para adicionar cores, usa-se o input:
 para adicionar uma barra de avaliação, por exemplo, usa-se o input:
 > <code>input:range</code>
 
+para adicionar uma lista de estados (por exemplo), usa-se o elemento/input com a seguinte sintáxe:
+```html
+<label for=""></label>
+<select name="" id="">
+    <optgroup label=""> <!-- para fazer um grupo de opções -->
+        <option value=""></option>
+    </optgroup>
+</select>
+```
+para adicionar uma lista de profissões (por exemplo), usa-se o elemento/input com a seguinte sintáxe:
+```html
+<label for=""></label>
+<input type="text" name="" id="" list="id-da-lista">
+<datalist id="id-da-lista">
+    <option value=""></option>
+</datalist>
+```
+para adicionar uma caixa de mensagens, usa-se o elemento/input com a seguinte sintáxe:
+> ao usar, é recomendado que se use o method post. Pois nele não há limite e bytes
+```html
+<label for=""></label>
+<textarea name="" id="" cols="30" rows="10" placeholder=""></textarea>
+```
 ****
 
 ### Observações: <br>
