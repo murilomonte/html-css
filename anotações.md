@@ -1,5 +1,6 @@
 # Anotações legais
 Quando as coisas não fizrem sentido é só olhar o código fonte do .md
+alguns erros de acentuação podem ocorrer :|
 ***
 
 ## ex002
@@ -265,4 +266,20 @@ para que os input de <code>checkbox</code> e <code>radio</code> já tenham algo 
 
 > <code>checked</code>
 
-## ex
+## ex026
+
+### media queries
+
+media queries servem para mostrar diferentes conteúdos web em telas e formatos direfentes. Por exemplo, o site que é visto no celular tende a ser diferente do visto no computador, assim como a impressão do mesmo.
+
+### media types
+
+sintáxe:
+```html
+<link rel="stylesheet" href="style.css" media="">
+```
+nesse exemplo, para fazer um site ligeiramente diferente na impressão, é preciso especificar o atributo <code>media=""</code>:
+```html
+<link rel="stylesheet" href="style.css" media="print">
+```
+já no caso de uma versão  para telas convencionais (de todos os tipos), usa-se <code>media="screen"</code>
