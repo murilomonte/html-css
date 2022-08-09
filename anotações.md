@@ -283,3 +283,15 @@ nesse exemplo, para fazer um site ligeiramente diferente na impressão, é preci
 <link rel="stylesheet" href="style.css" media="print">
 ```
 já no caso de uma versão  para telas convencionais (de todos os tipos), usa-se <code>media="screen"</code>
+
+para fazer com que as declaraçãoes "genéricas" sejam usadas por todos os estilos css, usa-se <code>media="all"</code>
+
+### media features
+
+dentro do atributo <code>media=""</code>, é possível adicionar media fetures, que são caracteristicas para os media types. por exemplo:
+
+```html
+<link rel="stylesheet" href="style.css" media="screen and (orientation: landcape)">
+```
+
+a declaração <code>media="screen and (orientation: lansdcape)</code> indica que aquele estilo css será usado quando a oritenação do dispositivo for paisagem. Onde também pode ser no modo retrado caso defina <code>orientation</code> como <code>potrait</code>
