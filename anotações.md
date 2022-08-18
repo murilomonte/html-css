@@ -295,3 +295,26 @@ dentro do atributo <code>media=""</code>, é possível adicionar media fetures, 
 ```
 
 a declaração <code>media="screen and (orientation: lansdcape)</code> indica que aquele estilo css será usado quando a oritenação do dispositivo for paisagem. Onde também pode ser no modo retrado caso defina <code>orientation</code> como <code>potrait</code>
+
+### devices breakpoints
+
+para tornar sites reposiveis em diferentes tamanhos de tela usa-se o seguinte código css:
+```css
+@media screen and (min-width: ;) and (min-width: ;) {
+    ...
+}
+```
+
+### tipicos devices breakpoints
+
+eles podem mudar com o tempo, então pesquise antes de usar.
+
+pequenas telas: <code>até 600px</code>
+
+celular: <code>600px até 768px</code>
+
+tablet: <code>768px até 992px</code>
+
+desktop: <code>992px até 1200px</code>
+
+grandes telas: <code>acima de 1200px</code>
