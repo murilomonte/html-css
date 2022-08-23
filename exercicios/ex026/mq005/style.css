@@ -16,6 +16,7 @@ header h1 {
     text-align: center;
     padding: 10px;
     margin: 0px;
+    color: white;
 }
 
 nav {
@@ -23,21 +24,28 @@ nav {
 }
 
 ul {
-    display: inline-flex;
+    
+    text-align: center;
     padding: 0px;
     list-style: none;
     margin: 0px;
 }
 
-a {
+li > a {
     text-decoration: none;
     color: white;
 }
+
+li:hover {
+    background-color: #757474;
+}
+
 
 li {
     background-color: #575757;
     padding: 10px;
     margin-right: 5px;
+    border-top: 2px solid gray;
 }
 
 main {
