@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body onresize="mudouTamamho()">
     <header>
         <h1>Meu Site</h1>
         <span id="burger" class="material-icons" onclick="clickmenu()">menu</span>
@@ -44,7 +44,14 @@
             } else {
                 menu.style.display = 'none'
             }
-            
+        }
+
+        function mudouTamamho() {
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+            }
         }
     </script>
 </body>

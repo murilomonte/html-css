@@ -318,3 +318,12 @@ tablet: <code>768px até 992px</code>
 desktop: <code>992px até 1200px</code>
 
 grandes telas: <code>acima de 1200px</code>
+
+
+### Google icons
+
+Para usar icones que seguem o material design:
+https://fonts.google.com/icons?selected=Material+Icons
+
+para ter noção de como usar os icones:
+https://developers.google.com/fonts/docs/material_icons
