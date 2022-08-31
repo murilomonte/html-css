@@ -19,8 +19,23 @@ header h1 {
     color: white;
 }
 
+#burger {
+    background-color: #1f1e1e;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#burger:hover {
+    background-color: white;
+    color: black;
+}
+
 nav {
     padding: 0px;
+    display: none;
 }
 
 ul {

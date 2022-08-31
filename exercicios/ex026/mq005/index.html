@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <nav>
+        <span id="burger" class="material-icons" onclick="clickmenu()">menu</span>
+        <nav id="menu">
             <ul>
                 <li><a href="">Opção 1</a></li>
                 <li><a href="">Opção 2</a></li>
@@ -34,5 +36,16 @@
             </p>
         </section>
     </main>
+    <script>
+        function clickmenu() {
+            let menu = document.getElementById('menu')
+            if (menu.style.display == 'none') {
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+            }
+            
+        }
+    </script>
 </body>
 </html>
