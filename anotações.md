@@ -1,5 +1,5 @@
 # Anotações legais
-Quando as coisas não fizrem sentido é só olhar o código fonte do .md
+Se as coisas não fizerem sentido é pq eu anoto as coisas do jeito que entendo =]
 alguns erros de acentuação podem ocorrer :|
 ***
 
@@ -327,3 +327,59 @@ https://fonts.google.com/icons?selected=Material+Icons
 
 para ter noção de como usar os icones:
 https://developers.google.com/fonts/docs/material_icons
+
+
+## flexbox
+
+Serve pra alinhar elementos dentro de um container de forma dinâmica
+a propiedade <code>display: flex;</code> deve sempre ser colocada no container pai
+
+### propiedades
+<code></code>
+
+Diz que o container usa a propiedade flexbox
+```css
+display: flex; 
+```
+
+Diz qual eixo principal os elementos irão seguir, row (horizontal) e column (vertical) 
+```css
+flex-direction: row ou row-reverse ou column ou column-reverse;
+```
+
+Alinha os elementos no eixo principal
+```css
+justify-content: flex-start ou flex-end ou center ou space-between ou space-around;
+```
+
+Alinha os itens no eixo vertical, com os mesmos valores do <code>justify-content</code>, com exeção de: stretch (faz com que todos os elementos ocupem 100% do eixo vertical) e baseline (que alinha os elementos com base no conteúdo que está dentro de cada um deles)
+
+```css
+align-items: flex-start ou flex-end ou center ou baseline ou strech;
+```
+
+Para decidir se os elementos irão para a linha de baixo quando chegarem no ginal ou ficarem espremidos
+```css
+flex-wrap: wrap ou no-wrap ou wrap-reverse;
+```
+
+uma especie de short-hand para as propiedades <code>flex-direction</code> e <code>flex-wrap</code> é:
+```css
+flex-flow: row wrap;
+```
+
+para alinhar elementos com mais de duas linhas (que estão sob efeito de <code>flex-wrap</code>) dependendo do eixo, usa-se:
+```css
+align-content: flex-start ou flex-end ou center ou space-between ou space-around;
+```
+
+para dar uma margem entre os elementos, usa-se:
+```css
+gap; 10px;
+ou
+gap-column: 10px; /* Seria equivalente a margin-left/-right */
+ou
+row-gap: 10px; /* Seria equivalente a margin-bottom/-top */
+
+```
+
