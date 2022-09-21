@@ -382,4 +382,15 @@ ou
 row-gap: 10px; /* Seria equivalente a margin-bottom/-top */
 
 ```
-
+Para mudar a ordem (segundo a ordem no html) de um elemento usa-se: 
+obs: por pardão todos os elementos usam o valor 0;
+Caso o valor seja 0, será usada a ordem dos elementos no código html
+```css
+order: 0
+```
+(Pesquisar mais)
+Para crescer elementos dependendo do espaço disponível e da proporção definida, usa-se: 
+obs: o número se refere a proporção em que o elemento vai crescer,
+```css
+flex-grow: 1
+```
