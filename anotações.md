@@ -386,11 +386,32 @@ Para mudar a ordem (segundo a ordem no html) de um elemento usa-se:
 obs: por pardão todos os elementos usam o valor 0;
 Caso o valor seja 0, será usada a ordem dos elementos no código html
 ```css
-order: 0
+order: 0;
 ```
 (Pesquisar mais)
 Para crescer elementos dependendo do espaço disponível e da proporção definida, usa-se: 
-obs: o número se refere a proporção em que o elemento vai crescer,
+obs: o número se refere a quantidade de vezes em que o elemento vai crescer em relação aos outros,
 ```css
-flex-grow: 1
+flex-grow: 1;
+```
+
+É basicamente o contrário do <code>flex-grow</code>, ele faz com que os elementos diminuam para caber no container. 
+```css
+flex-shrink: 1;
+```
+(Pesquisar mais) controla o tamanho dos elementos, (altura e largura)
+
+```css
+flex-basis: auto;
+```
+
+Serve de shorthand para as propiedades flex-grow/shrink/basis
+```css
+flex: 1 0 auto;
+```
+
+
+Serve para alinhar o elemento independentemente do restante
+```css
+align-self: flex-start;
 ```
