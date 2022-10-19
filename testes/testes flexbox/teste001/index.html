@@ -33,10 +33,20 @@
 
             flex: 1 200px;
         }
+
         article:nth-of-type(3) {
-            flex: 2 200px;
+            flex: 3 200px;
+            display: flex;
+            flex-flow: column;
         }
 
+        article:nth-of-type(3) div:first-child {
+            flex: 1 100px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
 
         section {
             display: flex;
@@ -44,6 +54,14 @@
             flex-wrap: wrap;*/
             flex-flow: row wrap;
         }
+
+        button {
+            flex: 1;
+            margin: 5px;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
     </style>
 </head>
 <body>
@@ -60,7 +78,13 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quae natus error, nihil quo praesentium laborum, minima illum sequi nam vero nemo laudantium labore libero culpa corporis numquam atque. Sit!</p>
         </article>
         <article>
-            <h3>Third article</h3>
+            <div>
+                <button>Smile</button>
+                <button>Laugh</button>
+                <button>Wink</button>
+                <button>Shrug</button>
+                <button>Blush</button>
+            </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quae natus error, nihil quo praesentium laborum, minima illum sequi nam vero nemo laudantium labore libero culpa corporis numquam atque. Sit!</p>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident et impedit ipsa aspernatur nemo saepe doloribus enim, atque quas tempora eius harum temporibus consequatur deserunt, molestiae officia? Obcaecati, tempora quas!</p>
