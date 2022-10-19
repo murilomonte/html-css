@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste flexbox 1</title>
+    <style>
+        body, html {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: purple;
+            text-align: center;
+            color: white;
+            height: 100px;
+        }
+
+        header > h1 {
+            line-height: 100px;
+            font-weight: bold;
+            margin: 0px;
+        }
+
+        article {
+            flex: 20px;
+            background-color: aqua;
+            padding: 10px;
+            margin: 10px;
+
+            flex: 1 200px;
+        }
+        article:nth-of-type(3) {
+            flex: 2 200px;
+        }
+
+
+        section {
+            display: flex;
+            /*flex-direction: row;
+            flex-wrap: wrap;*/
+            flex-flow: row wrap;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sample flexbox example</h1>
+    </header>
+    <section>
+        <article>
+            <h3>First article</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quae natus error, nihil quo praesentium laborum, minima illum sequi nam vero nemo laudantium labore libero culpa corporis numquam atque. Sit!</p>
+        </article>
+        <article>
+            <h3>Second article</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quae natus error, nihil quo praesentium laborum, minima illum sequi nam vero nemo laudantium labore libero culpa corporis numquam atque. Sit!</p>
+        </article>
+        <article>
+            <h3>Third article</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quae natus error, nihil quo praesentium laborum, minima illum sequi nam vero nemo laudantium labore libero culpa corporis numquam atque. Sit!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident et impedit ipsa aspernatur nemo saepe doloribus enim, atque quas tempora eius harum temporibus consequatur deserunt, molestiae officia? Obcaecati, tempora quas!</p>
+        </article>
+        
+    </section>
+    <footer>
+        <p>
+            Teste de flexbox: display; flex-direction; flex-wrap; flex-flow; flex
+        </p>
+    </footer>
+</body>
+</html>
