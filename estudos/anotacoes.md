@@ -1,6 +1,6 @@
 # Anotações legais
-Se as coisas não fizerem sentido é pq eu anoto as coisas do jeito que entendo =]
-alguns erros de acentuação podem ocorrer :|
+Caso as anotações não façam sentido, esteja ciente que anoto da forma que entendo, mas você pode me ajudar a corrigir entrando em contato comigo =]\
+(Alguns erros de acentuação podem ocorrer)
 ***
 
 ## ex002
