@@ -5,7 +5,7 @@ Todos estão concentrados na pasta [estudos](https://github.com/murilomonte/html
 
 ## Navegação
 
-- [Anotaçoes](https://github.com/murilomonte/html-css/blob/main/estudos/anotacoes.md)
+- [Anotações](https://github.com/murilomonte/html-css/blob/main/estudos/anotacoes.md)
 
 ## Outros projetos
 Veja meus outros projetos e estudos no meu [perfil](https://github.com/murilomonte) :)
