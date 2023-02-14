@@ -1,15 +1,11 @@
 # html-css
-Curso de html 5 e css 3
+## O repositório
+Aqui estão os arquivos dos meus estudos em html e css!\
+Todos estão concentrados na pasta [estudos](https://github.com/murilomonte/html-css/tree/main/estudos) separados por fonte e assunto
 
-Estou aprendendo a criar sites através do curso de HTML5 e CSS3 do <a href="https://cursoemvideo.com">Curso em Video</a>!!
+## Navegação
 
-## projetos
-Veja os projetos que fiz durante o curso no meu <a href="https://github.com/murilomonte">perfil</a> :)
+- [Anotaçes](https://github.com/murilomonte/html-css/blob/main/estudos/anotacoes.md)
 
-## curso
-
-Você pode ver minhas anotações <a href="https://github.com/murilomonte/html-css/blob/main/anota%C3%A7%C3%B5es.md">aqui</a>.
-
-ou
-
-visualizar meus exercícios e testes <a href="https://murilomonte.github.io/html-css/">aqui</a>
+## Outros projetos
+Veja meus outros projetos e estudos no meu [perfil](https://github.com/murilomonte) :)
