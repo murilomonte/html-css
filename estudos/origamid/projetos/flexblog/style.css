@@ -1,0 +1,372 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+
+    box-sizing: border-box;
+}
+
+body,
+html {
+    max-width: 100vw;
+    max-height: 100vh;
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    border-top: 1px #2C70FF solid;
+}
+
+.header-contact-background {
+    background-color: #122AB2;
+}
+
+.header-contact {
+    color: white;
+    padding: 10px;
+    max-width: 950px;
+    margin: auto;
+
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header-logo-navigation-background {
+    background-color: #2C70FF;
+}
+
+.header-logo-navigation {
+    color: white;
+    padding: 10px;
+    max-width: 950px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.header-navigation ul {
+    list-style: none;
+
+    display: flex;
+    gap: 20px;
+}
+
+.header-navigation ul a {
+    color: white;
+    font-size: 1.3em;
+}
+
+.header-navigation ul a:hover {
+    color: #122AB2;
+}
+
+.main-section {
+    padding: 10px;
+    max-width: 950px;
+    margin: auto;
+}
+
+.main-tittle {
+    font-size: 2em;
+    max-width: 600px;
+    margin: 50px 0px;
+    line-height: 1.5em;
+}
+
+.main-about {
+    display: flex;
+    padding: 50px 10px;
+}
+
+.about-content {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.about-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.2em;
+    color: gray;
+}
+
+.about-images {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.about-images img {
+    max-width: 100%;
+}
+
+.main-products {
+    padding: 50px 10px;
+}
+
+.main-products h1 {
+    font-size: 3em;
+    margin-bottom: 50px;
+}
+
+.products-card-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.card-product {
+    min-width: 200px;
+    background-color: #F7F7F7;
+    flex: 1;
+}
+
+.card-product span {
+    font-size: 2.7em;
+    font-weight: bold;
+    color: #A4A4A4;
+
+    display: inline-block;
+    padding: 60px 0px 60px 20px;
+}
+
+.card-product img {
+    max-width: 100%;
+}
+
+.card-purple {
+    border-top: 10px #AE81FF solid;
+}
+
+.card-pink {
+    border-top: 10px #F9265E solid;
+}
+
+.card-blue {
+    border-top: 10px #66D9EB solid;
+}
+
+.main-prices-cards {
+    background-color: #F7F7F7;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px;
+    align-items: flex-end;
+}
+
+.card-type {
+    text-align: center;
+
+    padding: 20px;
+    margin: 10px;
+    min-width: 260px;
+
+    border: 5px white solid;
+
+    flex: 1;
+}
+
+.card-type h2 {
+    font-size: 2.7em;
+    font-weight: bold;
+    color: #A4A4A4;
+
+    padding: 20px 0px;
+
+    display: inline-block;
+}
+
+.type-price {
+    font-size: 2.7em;
+    font-weight: bold;
+    justify-content: center;
+
+    margin: auto;
+    max-width: 300px;
+    padding: 10px 0px;
+
+    border-top: 5px white solid;
+    border-bottom: 5px white solid;
+}
+
+.price-currency {
+    vertical-align: super;
+    font-size: 0.5em;
+
+    display: inline-block;
+}
+
+.price-benefits {
+    width: 300px;
+    margin: auto;
+    list-style: none;
+    text-align: left;
+}
+
+.price-benefits li {
+    font-style: italic;
+    margin: 15px 0px;
+    font-size: 1.3em;
+    color: #747474;
+}
+
+.type-sell-button {
+    display: block;
+    max-width: 300px;
+
+    color: black;
+    font-size: 2.2rem;
+    font-weight: bold;
+
+    margin: auto;
+    padding: 20px 0px;
+
+    border: 4px black solid;
+}
+
+.main-features {
+    padding: 70px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.features {
+    max-width: 280px;
+}
+
+.features h3 {
+    font-size: 2.3em;
+    color: #A4A4A4;
+    padding-bottom: 20px;
+}
+
+.features h3::before {
+    display: inline-block;
+    content: '';
+    width: 10px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.features p {
+    font-size: 1.2em;
+    color: #747474;
+}
+
+.features-inteligente h3::before,
+.features-transparente h3::before {
+    background: #AE81FF;
+}
+
+.features-compacto h3::before,
+.features-opaco h3::before {
+    background: #F9265E;
+}
+
+.features-economico h3::before,
+.features-sustentavel h3::before {
+    background: #66D9EB;
+}
+
+.main-newsletter {
+    background-color: #F7F7F7;
+    padding: 60px 0px;
+}
+
+.newsletter-container {
+    padding: 10px;
+    max-width: 950px;
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.newsletter-about {
+    width: 300px;
+}
+
+.newsletter-about h2 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #A4A4A4;
+}
+
+.newsletter-about p {
+    font-size: 1.2em;
+    color: #747474;
+}
+
+.newsletter-form {
+    background-color: #b0cf00;
+
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.newsletter-form [type="email"] {
+    font-family: inherit;
+    font-size: 1.2em;
+    font-style: italic;
+    background-color: #F7F7F7;
+    border: 5px #2C70FF solid;
+
+    height: 60px;
+    max-width: 550px;
+    padding: 10px;
+    flex: 1;
+}
+
+.newsletter-form [type="submit"] {
+    font-family: inherit;
+
+    background-color: #2C70FF;
+    color: white;
+    border: none;
+    font-size: 2.2em;
+    font-weight: bolder;
+
+    height: 80px;
+    max-width: 550px; 
+    flex: 1;
+}
+
+.footer {
+    text-align: center;
+    font-size: 2.2em;
+    color: #122AB2;
+
+    background-color: #2C70FF;
+    padding: 80px;
+}
