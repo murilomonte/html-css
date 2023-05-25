@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Preciso melhorar na nomeação de classes :( -->
     <header class="header">
         <div class="header-contact-background">
             <div class="header-contact">
@@ -23,10 +24,10 @@
                 </div>
                 <nav class="header-navigation">
                     <ul>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Produtos</a></li>
-                        <li><a href="#">Preço</a></li>
-                        <li><a href="#">Qualidade</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#preco">Preço</a></li>
+                        <li><a href="#qualidade">Qualidade</a></li>
                     </ul>
                 </nav>
             </div>
@@ -38,7 +39,7 @@
                 <h1>Novos valores e Propiedades de CSS</h1>
             </div>
             <hr>
-            <div class="main-about">
+            <div class="main-about" id="sobre">
                 <div class="about-content">
                     <h2>Sobre</h2>
                     <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão das condições inegavelmente apropriadas objetivos.</p> <br>
@@ -46,11 +47,13 @@
                 </div>
                 <div class="about-images">
                     <img src="img/sobre1.jpg">
+                </div>
+                <div class="about-images">
                     <img src="img/sobre2.jpg">
                 </div>
             </div>
             <hr>
-            <div class="main-products">
+            <div class="main-products" id="produtos">
                 <h1>Produtos</h1>
                 <div class="products-card-container">
                     <div class="card-product card-purple">
@@ -68,9 +71,10 @@
             </div>
             </div>
         </section>
-        <section class="main-prices-cards">
+        <section class="main-prices-cards" id="preco">
             <div class="card-type type-cobre">
                 <h2>Cobre</h2>
+                <!-- Poderia ser usado a tag <sup> para colocar o R$ -->
                 <div class="type-price">
                     <span><span class="price-currency">R$</span>19</span>
                 </div>
@@ -114,7 +118,7 @@
             </section>
         </div>
         <section class="main-section">
-            <div class="main-features">
+            <div class="main-features" id="qualidade">
                 <div class="features features-inteligente">
                     <h3>Inteligente</h3>
                     <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão </p>
