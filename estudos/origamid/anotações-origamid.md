@@ -12,12 +12,6 @@ Anoto as coisas do jeito que entendo. Caso tenha algo errado, por favor, abra um
 
 ToDo
 
-## Decobertas
-
-Comandos e outras coisas aleatórias que eu descobri conforme o meu aprendizado evolui.
-
-toDo
-
 ## HTML
 
 Assuntos relacionados ao HTML. \
@@ -56,14 +50,19 @@ Quando um elemento recebe essa propiedade, ele se torna um elemento **inline**, 
 * ``grid-template-columns: ;`` \
     Informa quantas colunas terá o grid, ex: \
 
-    ```html
+    ```css
     container {
         grid-template-columns: 20px 20px;
-        // informa que terá duas colunas de 20 pixels
+        /* informa que terá duas colunas de 20 pixels */
     }
     ```
 
 * ``place-content; <align-*> <justify-*>`` \
     é uma shorthand para as propiedades ``aling-content`` e ``justify-content``, respectivamente (sim, as mesmas do flexbox).
 
-### item
+### Ítem
+
+* ``grid-column: <start> <end> ;`` \
+    Informa onde o item deve, respectivamente, iniciar e onde terminar, de acordo com as linhas do grid.
+  * ``span <n>`` \
+        É uma forma de dizer quantas colunas o ítem deve ocupar. Pode ser lido como: "expanda N colunas"
