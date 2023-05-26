@@ -44,6 +44,8 @@ Quando um elemento recebe essa propiedade, ele se torna um elemento **inline**, 
 
 ### Container
 
+Guias rápidos (sempre bom consultar): [CSS-Tricks](https://css-tricks.com/snippets/css/complete-guide-grid/), [Origamid](https://origamid.com/projetos/grid/) 
+
 * ``display: grid;`` \
     informa que o container irá utilizar o grid layout.
 
@@ -57,12 +59,18 @@ Quando um elemento recebe essa propiedade, ele se torna um elemento **inline**, 
     }
     ```
 
-* ``place-content; <align-*> <justify-*>`` \
-    é uma shorthand para as propiedades ``aling-content`` e ``justify-content``, respectivamente (sim, as mesmas do flexbox).
+* ``place-content; <align-content> <justify-content>;`` \
+    Alinha a grid no container externo verticalmente e horizontalmente, respectivamente; E é uma shorthand para as propiedades ``aling-content`` e ``justify-content``, respectivamente (sim, as mesmas do flexbox).
 
-### Ítem
+* ``place-items: <align-content> <justify-content>;`` \
+    Alinha os ítems dentro da grid verticalmente e horizontalmente, respectivamente; E é uma shorthand para as propiedades ``align-items`` e ``justify-content``, respectivamente.
+
+### item
 
 * ``grid-column: <start> <end> ;`` \
     Informa onde o item deve, respectivamente, iniciar e onde terminar, de acordo com as linhas do grid.
   * ``span <n>`` \
         É uma forma de dizer quantas colunas o ítem deve ocupar. Pode ser lido como: "expanda N colunas"
+
+* ``place-self: <align-content> <justify-content>`` \
+    Alinha o conteúdo de uma caixa da grid verticalmente e horizontalmente, respectivamente; E é uma shorthand para as propiedades ``align-self`` e ``justify-self``, respectivamente.
