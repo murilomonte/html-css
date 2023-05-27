@@ -74,3 +74,13 @@ Guias rápidos (sempre bom consultar): [CSS-Tricks](https://css-tricks.com/snipp
 
 * ``place-self: <align-content> <justify-content>`` \
     Alinha o conteúdo de uma caixa da grid verticalmente e horizontalmente, respectivamente; E é uma shorthand para as propiedades ``align-self`` e ``justify-self``, respectivamente.
+
+## Position (revisar)
+
+todo
+
+* ``relative`` \
+    Manipula o posicionamento relativo a posição inicial. Obs: mesmo movendo o elemento, o espaço inicial é ocupado.
+
+* ``absolute`` \
+    
