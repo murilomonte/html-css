@@ -6,32 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Position</title>
     <style>
-        div {
-            border: 2px solid #ccc;
-            margin-top: 40px;
-            padding: 20px 20px 40px 20px;
-        }
-
-        span {
-            background-color: #e7e7e7;
-            border: 1px solid #ccc;
+        h1 {
+            margin: 0px;
             padding: 10px;
-
-            position: relative;
-            /* Relative diz que o posicionamento é relativo a posição atual do ítem */
-            top: -20px;
-            
+            background-color: lightblue;
         }
+
+        .index1 {
+            position: relative;
+            background-color: greenyellow;
+            top: 20px;
+            z-index: 0;
+        }
+
+        .index2 {
+            position: absolute;
+            background-color: lightcoral;
+            top: 60px;
+        }
+        
     </style>
 </head>
 <body>
-    <div>
-        <span>Saiba mais</span>
-        <h1>Primeiro conteúdo</h1>
-    </div>
-    <div>
-        <span>Saiba mais</span>
-        <h1>Segundo conteúdo</h1>
-    </div>
+    <h1>Elemento 1</h1>
+    <h1 class="index1">Elemento 2</h1>
+    <h1>Elemento 3</h1>
+    <h1 class="index2">Elemento 4</h1>
+    <h1>Elemento 5</h1>
 </body>
 </html>

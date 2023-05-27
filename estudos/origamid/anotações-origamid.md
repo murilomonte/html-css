@@ -77,10 +77,27 @@ Guias rápidos (sempre bom consultar): [CSS-Tricks](https://css-tricks.com/snipp
 
 ## Position (revisar)
 
-todo
+A propiedade position tem a função de manipular o fluxo pdrão dos elementos em um documento. Por padrão um elemento é definido como ``static``, mas pode ser definido com outros atributos, como:
+
+* ``fixed`` \
+    Torna o elemento **fixo na tela** e relativo ao elemento pai (por padrão, o  ``<body>`` *revisar). **Obs:** Útil em pop-up de cookies, por exemplo.
 
 * ``relative`` \
-    Manipula o posicionamento relativo a posição inicial. Obs: mesmo movendo o elemento, o espaço inicial é ocupado.
+    Remove o elemento do fluxo e torna-o relativo a posição inicial do elemento. **Obs**: mesmo movendo o elemento, o espaço inicial é ocupado.
 
 * ``absolute`` \
-    
+    Remove o elemento do fluxo inicial e torna-o relativo ao ``<body>``. **obs:** para torná-lo relativo ao elemento pai, é preciso adicionar o atributo ``position: relative;`` no elemento pai.
+
+### Manipulação de itens
+
+Um ítem com o atributo ``position`` customizado pode ser manipulado pelos seguintes atrbutos:
+
+* ``top: <valor>; bottom: <valor>;`` \
+    define a posição refente ao topo e base do elemento pai.
+
+* ``left: <valor>; right: <valor>;`` \
+    definte a posição referente a esquerda e direita do elemento pai.
+
+#### Observações
+
+É preciso omitir um dos atributos (``top`` ou ``bottom``) a depender do conteúdo. Ex: Caso seja um pop-up de cookie, é interessante que seja omitido o atributo ``top`` para que o pop-up fique alinhado em baixo.
