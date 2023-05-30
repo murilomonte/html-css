@@ -21,6 +21,13 @@ WIP
 
 Assuntos relacionados ao CSS
 
+## Decobertas css
+
+"Descobertas" que fiz durante meus estudos/pesquisas, incluindo funções, curiosidades etc.
+
+* ``text-transform: <valor>``\
+    Usado para transformar um texto de um elemento. Podendo, por exemplo, transformar um texto em letras maiúsculas, utilizando o valor ``uppercase``.
+
 ## display
 
 Todo elemento pode receber a propiedade ``display``, que indica como o elemento deve ser tratado, seja ele na forma de bloco ou inline.
