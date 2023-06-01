@@ -15,20 +15,63 @@ ToDo
 ## HTML
 
 Assuntos relacionados ao HTML. \
-WIP
+
+### Semântica
+
+No html existem diversas tags que marcam pontos de referencia no conteúdo, conhecidas como **landmarks**. Visualmente elas têm o mesmo efeito que uma div, porém, dão sentido ao conteúdo.
+
+Temos como exemplo:
+
+* ``<main>`` \
+    Indica o conteúdo principal da página
+
+* ``<nav>`` \
+    Indica onde fica a navegação do site.
+
+* ``<section>`` \
+    Representa uma seção genérica de conteúdo.
+
+* ``<article>`` \
+    Representa uma seção indepentente do conteúdo da página. Onde pode ser redistribuído de indepentente ou reutilizável. OU seja, não é um conteúdo ao qual não precisa do restante para fazer sentido.
+
+* ``<aside>`` \
+    Indica uma seção não necessáriamente relacionada ao conteúdo principal. Geralmente utilizado como uma aba lateral.
+
+* ``<footer>`` \
+    Indica o rodapé do site.
+
+* ``<header>`` \
+    Indica o cabeçalho
+
+### Acessibilidade
+
+todo
+
+* ``aria-label=""`` \
+    É uma propiedade que define um rótulo para um elemento interativo quando não há texto visível pelo DOM, sendo utilizado por leitores de tela. Fonte: [MDN](https://developer.mozilla.org/pt-BR/docs/Web/Accessibility/ARIA/Attributes/aria-label)
+
+* ``aria-labelledby=""`` \
+    Segue a mesma premissa da propiedade ``aria-label``, porém permite referenciar outro elementos como um rótulo através de um ``id`` pré-estabelecido. Ex:
+
+    ```html
+    <article aria-labelledby="titulo">
+        <h2 id="titulo">Título</h2>
+        <p>Parágrafo</p>
+    </article>
+    ```
 
 ## CSS
 
 Assuntos relacionados ao CSS
 
-## Decobertas css
+### Decobertas css
 
 "Descobertas" que fiz durante meus estudos/pesquisas, incluindo funções, curiosidades etc.
 
 * ``text-transform: <valor>``\
     Usado para transformar um texto de um elemento. Podendo, por exemplo, transformar um texto em letras maiúsculas, utilizando o valor ``uppercase``.
 
-## display
+### display
 
 Todo elemento pode receber a propiedade ``display``, que indica como o elemento deve ser tratado, seja ele na forma de bloco ou inline.
 
@@ -37,9 +80,9 @@ Há algumas formas de tratar o elemento além das convencionais ``block``, ``inl
 * ``inline-block`` \
 Quando um elemento recebe essa propiedade, ele se torna um elemento **inline**, porém, com características do box model, como **margin**, **padding**, entre outras.
 
-## img
+### img
 
-### Informações úteis
+#### Informações úteis
 
 * ``display: block;`` \
     Por padrão uma imagem é um ``inline-block``. O que por padrão deixa o elemento com uma margem.
@@ -47,11 +90,11 @@ Quando um elemento recebe essa propiedade, ele se torna um elemento **inline**, 
 * ``max-width: 100%;`` \
     Utiliza-se essa propiedade para que a imagem não creça além do elemento pai.
 
-## grid
+### grid
 
-### Container
+#### Container
 
-Guias rápidos (sempre bom consultar): [CSS-Tricks](https://css-tricks.com/snippets/css/complete-guide-grid/), [Origamid](https://origamid.com/projetos/grid/) 
+Guias rápidos (sempre bom consultar): [CSS-Tricks](https://css-tricks.com/snippets/css/complete-guide-grid/), [Origamid](https://origamid.com/projetos/grid/)
 
 * ``display: grid;`` \
     informa que o container irá utilizar o grid layout.
@@ -72,7 +115,7 @@ Guias rápidos (sempre bom consultar): [CSS-Tricks](https://css-tricks.com/snipp
 * ``place-items: <align-content> <justify-content>;`` \
     Alinha os ítems dentro da grid verticalmente e horizontalmente, respectivamente; E é uma shorthand para as propiedades ``align-items`` e ``justify-content``, respectivamente.
 
-### item
+#### item
 
 * ``grid-column: <start> <end> ;`` \
     Informa onde o item deve, respectivamente, iniciar e onde terminar, de acordo com as linhas do grid.
@@ -82,7 +125,7 @@ Guias rápidos (sempre bom consultar): [CSS-Tricks](https://css-tricks.com/snipp
 * ``place-self: <align-content> <justify-content>`` \
     Alinha o conteúdo de uma caixa da grid verticalmente e horizontalmente, respectivamente; E é uma shorthand para as propiedades ``align-self`` e ``justify-self``, respectivamente.
 
-## Position (revisar)
+### Position (revisar)
 
 A propiedade position tem a função de manipular o fluxo pdrão dos elementos em um documento. Por padrão um elemento é definido como ``static``, mas pode ser definido com outros atributos, como:
 
@@ -95,7 +138,7 @@ A propiedade position tem a função de manipular o fluxo pdrão dos elementos e
 * ``absolute`` \
     Remove o elemento do fluxo inicial e torna-o relativo ao ``<body>``. **obs:** para torná-lo relativo ao elemento pai, é preciso adicionar o atributo ``position: relative;`` no elemento pai.
 
-### Manipulação de itens
+#### Manipulação de itens
 
 Um ítem com o atributo ``position`` customizado pode ser manipulado pelos seguintes atrbutos:
 
@@ -105,6 +148,6 @@ Um ítem com o atributo ``position`` customizado pode ser manipulado pelos segui
 * ``left: <valor>; right: <valor>;`` \
     definte a posição referente a esquerda e direita do elemento pai.
 
-#### Observações
+##### Observações
 
 É preciso omitir um dos atributos (``top`` ou ``bottom``) a depender do conteúdo. Ex: Caso seja um pop-up de cookie, é interessante que seja omitido o atributo ``top`` para que o pop-up fique alinhado em baixo.
