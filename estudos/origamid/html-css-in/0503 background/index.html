@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <style>
+        .bicicleta {
+            background-color: lightblue;
+            background-image: url('img/bicicleta.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center top;
+                /* Aumenta o tamanho da imagem.
+                    Possíveis valores:
+                    contain - é como se fosse 100%
+                    cover - corta a imagem para se adequar ao conteúdo,    
+                */
+            height: 700px;
+            width: 1000px;
+            display: flex;
+        }
+
+        h1 {
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+        }
+
+        .pattern {
+            height: 300px;
+            width: 1000px;
+            background-color: lightcoral;
+            background-image: url("img/pattern.svg");
+            background-repeat: repeat;
+            background-size: 100px;
+        }
+
+        .linear {
+            height: 200px;
+            width: 1000px;
+            background-image: linear-gradient(to right ,lightblue, lightcoral);
+        }
+
+        .radial {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-image: radial-gradient(lightblue, lightcoral);
+        }
+    </style>
+</head>
+<body>
+    <div class="linear">
+
+    </div>
+
+    <div class="radial">
+
+    </div>
+
+    <div class="bicicleta">
+        <h1>Nossas bicicleta</h1>
+    </div>
+
+    <div class="pattern">
+
+    </div>
+</body>
+</html>

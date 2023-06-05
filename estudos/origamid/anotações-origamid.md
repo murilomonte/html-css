@@ -151,3 +151,57 @@ Um ítem com o atributo ``position`` customizado pode ser manipulado pelos segui
 ##### Observações
 
 É preciso omitir um dos atributos (``top`` ou ``bottom``) a depender do conteúdo. Ex: Caso seja um pop-up de cookie, é interessante que seja omitido o atributo ``top`` para que o pop-up fique alinhado em baixo.
+
+### Unidades
+
+Existem diversas unidades de medida no css. Dentre elas temos:
+
+* ``px``
+
+* ``rem`` \
+    É uma medida que é relativa a raiz do documento, ou seja, o ``html``, que, na maioria dos browser é igual a ``16px``. Mas, **por que usar ``rem``?** Utilizando ``rem``, os elementos irão respeitar o tamamho da fonte definido pelo o usuário.
+
+* ``em`` \
+    É uma medida relativa ao tamamnho do elemento pai.
+
+### Background
+
+Essa propiedade é usada para definir o fundo de um elemento, como imagem, cor, tamanho etc. Temos as seguintes propiedades: (algumas auto explicativas)
+
+* ``background-color: <cor>;``
+
+* ``background-image: <>;`` \
+    Utilzado para definir imagens de fundo, com: ``url()`` ou gradientes, seguindo a seguinte sintáxe:
+  * ``linear-gradient(<direção>, <primeira cor>, <segunda>, ...)`` \
+    A direção poderá ser omitida ou representada por ``deg`` (graus) e ``to right``, ``to left``.
+
+  * ``radial-gradient(<estilo>, <primeira cor>, <segunda>, ...)`` \
+    Seguindo o mesmo conceito de um gradiente linear.
+
+* ``background-repeat: <>;`` \
+    Tendo como valor ``repeat`` e ``no-repeat``.
+
+* ``background-attachment: <>;`` \
+    Indica se o fundo será fixo ou irá se mover de acordo com o elemento. Valores possíveis:
+  * ``fixed`` \
+    Indica que o fundo será fixo em relação a viewport, e não irá respeitar a rolagem da página.
+
+  * ``scroll`` \
+    Indica que o fundo é fixo em relação ao própio elemento, e assim irá acompanhar a rolagem da página.
+
+  * ``local`` \
+    Indica que o fundo é fixo em relação ao conteúdo do elemento, ou seja, irá rolar conforme o conteúdo, não com a página.
+
+* ``background-size: <>;`` \
+    Aumenta o tamanho da imagem. Tendo os possíveis valores:
+  * ``contain`` \
+    Aumenta o fundo para ocupar 100% do elemento pai.
+
+  * ``cover`` \
+    Corta a imagem para se adequar ao conteúdo.
+
+  * ``px, em, rem...`` \
+    Qualquer unidade de valor é aceito.
+
+* ``background-positon: <x> <y>;`` \
+    Definie a posição inicial da imagem nos eixos x e y.
