@@ -205,3 +205,53 @@ Essa propiedade é usada para definir o fundo de um elemento, como imagem, cor, 
 
 * ``background-positon: <x> <y>;`` \
     Definie a posição inicial da imagem nos eixos x e y.
+
+### Pseudo classes
+
+todo
+
+#### Estados
+
+Permite definir o estilo de diferentes estados do html. Ex:
+
+* ```:hover``` \
+    Para quando o elemento for sobreposto pelo cursor.
+
+* ```:focus``` \
+    Para quando o elemento for posto em foco (utilizando tab)
+
+* ```:active``` \
+    Quando o elemento for clicado.
+
+* ```:visited``` \
+    Para links que já foram visitados
+
+#### Seletores
+
+* ```:first-child``` \
+    Para selecionar o primeiro filho de um elemento.
+
+* ```:last-child``` \
+    Para selecionar o último filho de um elemento.
+
+* ```:nth-child(<numero>)``` \
+    Para selecionar um filho específico. Aceitando os valores:
+  * ``even`` \
+    pares
+  * ``odd``\
+    ímpares
+  * ``3n`` \
+    De 3 em 3 números (podendo ser colocado outos valores.)
+
+### Pseudo elementos
+
+todo
+
+* ```::before``` \
+    Usado para criar elementos html antes de outros com base no seletor utilizando css.
+
+* ```::after``` \
+    Para criar elementos depois.
+
+* ```::first-letter``` \
+    Para estilizar a primeira letra de um conteúdo.

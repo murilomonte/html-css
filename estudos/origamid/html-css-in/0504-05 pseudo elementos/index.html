@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elementos/Classes</title>
+    <style>
+        a {
+            display: inline-block;
+            padding: 1rem 2rem;
+            font-size: 1.5rem;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: wavy;
+            background-color: #caf;
+            color: #217;
+
+            transition: 0.5s;
+            border-radius: 10px;
+        }
+
+        a:hover {
+            background-color: #adf;
+            color: #147;
+
+            border-radius: 25px;
+            transition: 0.5s;
+        }
+
+        a:focus {
+            background-color: #cfa;
+            color: #371;
+            outline: none;
+        }
+
+        a:active {
+            background-color: #ffa;
+            color: #761;
+        }
+
+        a:visited {
+            background-color: #fda;
+            color: #731;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Clique aqui</a>
+</body>
+</html>
