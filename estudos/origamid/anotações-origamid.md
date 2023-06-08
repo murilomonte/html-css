@@ -255,3 +255,35 @@ todo
 
 * ```::first-letter``` \
     Para estilizar a primeira letra de um conteúdo.
+
+### Responsivo
+
+#### meta viewport
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+A meta tag viewport é uma tag muito útil que padroniza o tamanho dos elementos em difentes telas, ou seja, mesmo que visto em uma tela de alta densidade, ela parecerá a mesma na tela de um celular.
+
+#### Media queries
+
+Uma media querie é uma função que só permite que o código dentro dela seja executado caso a condição seja verdadeira. Tendo a seguinte sintáxe:
+
+```css
+@media (max-width: 500px) { }
+```
+
+> O conteúdo só será executado caso a largura da tela seja **menor que 500px**
+
+```css
+@media (min-width: 600px) { }
+```
+
+> O conteúdo só será executado caso a largura da tela seja **maior que 600px**
+
+```css
+@media (min-width: 800px) and (max-width: 900px) {}
+```
+
+> O conteúdo só será executado caso seja a largura da tela seja **entre 800px e 900px**
