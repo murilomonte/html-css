@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid responsivo</title>
+    <style>
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .minmax {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            
+        }
+
+        @media (min-width: 400px) {
+            .minmax img {
+                grid-row: 2;
+            }
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="minmax">
+        <img src="bicicleta.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus necessitatibus fugiat neque impedit dolorem quo voluptate sequi adipisci praesentium repudiandae magni, porro nobis non, explicabo cumque. Deserunt hic cupiditate nemo.</p>
+    </div>
+    <div class="galeria">
+        <img src="bicicleta.jpg" alt="">
+        <img src="bicicleta.jpg" alt="">
+        <img src="bicicleta.jpg" alt="">
+        <img src="bicicleta.jpg" alt="">
+        <img src="bicicleta.jpg" alt="">
+        <img src="bicicleta.jpg" alt="">
+        <img src="bicicleta.jpg" alt="">
+        <img src="bicicleta.jpg" alt="">
+        <img src="bicicleta.jpg" alt="">       
+    </div>
+</body>
+</html>

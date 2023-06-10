@@ -287,3 +287,22 @@ Uma media querie é uma função que só permite que o código dentro dela seja 
 ```
 
 > O conteúdo só será executado caso seja a largura da tela seja **entre 800px e 900px**
+
+#### Grid responsivo
+
+Para tornar responsivo um container grid, podemos utilizar as seguinte tecnicas:
+
+* Utilizando ``auto-fit``
+
+    ```css
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+    ```
+
+    Onde ``auto-fit`` fará com que seja criado o máximo de colunas possíveis, porém, respeitando o valor seguinte: ``minmax(300px, 1fr)`` que indica que uma coluna terá de ter no mínimo 300px e, se tiver espaço, deverá distribuir igualmente o espaço restante.
+
+#### object-fit
+
+``object-fit`` é um atributo que define que o conteúdo seja ajustado sem distorções conforme a largura e altura do elemento pai. Sendo muito útil com imagens, tendo um efeito parecido ao ``background-size``
