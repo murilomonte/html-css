@@ -81,6 +81,7 @@ html {
 
 .introducao-image {
     max-width: 100%;
+    height: auto;
 }
 
 .introducao-conteudo {
@@ -89,7 +90,7 @@ html {
 
 .introducao-conteudo > h1::before {
     content: '';
-    background: url('/img/detalhe.svg') no-repeat center;
+    background: url("../img/detalhe.svg") no-repeat center;
     width: 140px;
     height: 140px;
     position: absolute;
@@ -172,7 +173,7 @@ html {
 }
 
 .experiencia-conteudo-card > h2 {
-    grid-row:  1 / 2;
+    grid-row: 1 / 2;
     font-size: 1.2rem;
     color: var(--g13);
 }
@@ -240,7 +241,7 @@ html {
     display: flex;
     flex-direction: column;
     position: relative; 
-    flex: 2 2 200px;
+    flex: 1;
 }
 
 .formacao-conteudo-card-item::before {
