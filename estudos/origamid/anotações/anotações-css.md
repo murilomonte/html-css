@@ -1,6 +1,6 @@
-# Anotações brabas
+# Anotações CSS
 
-Essas são minhas anotações pontuais sobre alguns assuntos que irei me aprofundar daqui em diante sobre HTML e CSS.
+Essas são minhas anotações pontuais sobre alguns assuntos que irei me aprofundar daqui em diante sobreCSS.
 
 (Anteriormente havia um arquivo markdown para as anotações, porém baseado somente no curso do curso em vídeo, disponível [aqui](/estudos/curso-em-video/anotacoes-cev.md).)
 
@@ -10,68 +10,42 @@ Anoto as coisas do jeito que entendo. Caso tenha algo errado, por favor, abra um
 
 ## Sumário
 
-ToDo
+* [Descibertas](#decobertas-css)
+* [Display](#display)
+* [Imagens](#imagens)
+  * [Informações](#informações-úteis)
+* [Grid Layout](#grid-layout)
+  * [Informações Úteis](#informações-úteis)
+    * [Container](#container)
+    * [Item](#item)
+* [Position](#position)
+  * [Manipulação de itens](#manipulação-de-itens)
+    * [Observações](#observações)
+* [Unidades](#unidades)
+* [Background](#background)
+* [Pseudo Classes](#pseudo-classes)
+  * [Estados](#estados)
+  * [Seletores](#seletores)
+* [Pseudo Elementos](#pseudo-elementos)
+* [Media Queries](#media-queries)
+  * [Modo claro e escuro](#modo-claro-e-escuro)
+  * [Responsividade](#responsividade)
+    * [Meta Viewport](#meta-viewport)
+    * [Breakpoints](#breakpoints)
+    * [Grid Responsivo](#grid-responsivo)
+      * [object-fit](#object-fit)
 
-## HTML
-
-Assuntos relacionados ao HTML. \
-
-### Semântica
-
-No html existem diversas tags que marcam pontos de referencia no conteúdo, conhecidas como **landmarks**. Visualmente elas têm o mesmo efeito que uma div, porém, dão sentido ao conteúdo.
-
-Temos como exemplo:
-
-* ``<main>`` \
-    Indica o conteúdo principal da página
-
-* ``<nav>`` \
-    Indica onde fica a navegação do site.
-
-* ``<section>`` \
-    Representa uma seção genérica de conteúdo.
-
-* ``<article>`` \
-    Representa uma seção indepentente do conteúdo da página. Onde pode ser redistribuído de indepentente ou reutilizável. OU seja, não é um conteúdo ao qual não precisa do restante para fazer sentido.
-
-* ``<aside>`` \
-    Indica uma seção não necessáriamente relacionada ao conteúdo principal. Geralmente utilizado como uma aba lateral.
-
-* ``<footer>`` \
-    Indica o rodapé do site.
-
-* ``<header>`` \
-    Indica o cabeçalho
-
-### Acessibilidade
-
-todo
-
-* ``aria-label=""`` \
-    É uma propiedade que define um rótulo para um elemento interativo quando não há texto visível pelo DOM, sendo utilizado por leitores de tela. Fonte: [MDN](https://developer.mozilla.org/pt-BR/docs/Web/Accessibility/ARIA/Attributes/aria-label)
-
-* ``aria-labelledby=""`` \
-    Segue a mesma premissa da propiedade ``aria-label``, porém permite referenciar outro elementos como um rótulo através de um ``id`` pré-estabelecido. Ex:
-
-    ```html
-    <article aria-labelledby="titulo">
-        <h2 id="titulo">Título</h2>
-        <p>Parágrafo</p>
-    </article>
-    ```
-
-## CSS
-
-Assuntos relacionados ao CSS
-
-### Decobertas css
+## Decobertas css
 
 "Descobertas" que fiz durante meus estudos/pesquisas, incluindo funções, curiosidades etc.
 
 * ``text-transform: <valor>``\
     Usado para transformar um texto de um elemento. Podendo, por exemplo, transformar um texto em letras maiúsculas, utilizando o valor ``uppercase``.
 
-### display
+* ``cursor: pointer``\
+    Faz com que o cursor vire uma "mãozinha" ao passar por cima do elemento.
+
+## display
 
 Todo elemento pode receber a propiedade ``display``, que indica como o elemento deve ser tratado, seja ele na forma de bloco ou inline.
 
@@ -80,9 +54,9 @@ Há algumas formas de tratar o elemento além das convencionais ``block``, ``inl
 * ``inline-block`` \
 Quando um elemento recebe essa propiedade, ele se torna um elemento **inline**, porém, com características do box model, como **margin**, **padding**, entre outras.
 
-### img
+## Imagens
 
-#### Informações úteis
+### Informações úteis
 
 * ``display: block;`` \
     Por padrão uma imagem é um ``inline-block``. O que por padrão deixa o elemento com uma margem.
@@ -90,9 +64,9 @@ Quando um elemento recebe essa propiedade, ele se torna um elemento **inline**, 
 * ``max-width: 100%;`` \
     Utiliza-se essa propiedade para que a imagem não creça além do elemento pai.
 
-### grid
+## Grid layout
 
-#### Container
+### Container
 
 Guias rápidos (sempre bom consultar): [CSS-Tricks](https://css-tricks.com/snippets/css/complete-guide-grid/), [Origamid](https://origamid.com/projetos/grid/)
 
@@ -115,7 +89,7 @@ Guias rápidos (sempre bom consultar): [CSS-Tricks](https://css-tricks.com/snipp
 * ``place-items: <align-content> <justify-content>;`` \
     Alinha os ítems dentro da grid verticalmente e horizontalmente, respectivamente; E é uma shorthand para as propiedades ``align-items`` e ``justify-content``, respectivamente.
 
-#### item
+### Item
 
 * ``grid-column: <start> <end> ;`` \
     Informa onde o item deve, respectivamente, iniciar e onde terminar, de acordo com as linhas do grid.
@@ -125,7 +99,7 @@ Guias rápidos (sempre bom consultar): [CSS-Tricks](https://css-tricks.com/snipp
 * ``place-self: <align-content> <justify-content>`` \
     Alinha o conteúdo de uma caixa da grid verticalmente e horizontalmente, respectivamente; E é uma shorthand para as propiedades ``align-self`` e ``justify-self``, respectivamente.
 
-### Position (revisar)
+## Position
 
 A propiedade position tem a função de manipular o fluxo pdrão dos elementos em um documento. Por padrão um elemento é definido como ``static``, mas pode ser definido com outros atributos, como:
 
@@ -138,7 +112,7 @@ A propiedade position tem a função de manipular o fluxo pdrão dos elementos e
 * ``absolute`` \
     Remove o elemento do fluxo inicial e torna-o relativo ao ``<body>``. **obs:** para torná-lo relativo ao elemento pai, é preciso adicionar o atributo ``position: relative;`` no elemento pai.
 
-#### Manipulação de itens
+### Manipulação de itens
 
 Um ítem com o atributo ``position`` customizado pode ser manipulado pelos seguintes atrbutos:
 
@@ -148,11 +122,11 @@ Um ítem com o atributo ``position`` customizado pode ser manipulado pelos segui
 * ``left: <valor>; right: <valor>;`` \
     definte a posição referente a esquerda e direita do elemento pai.
 
-##### Observações
+#### Observações
 
 É preciso omitir um dos atributos (``top`` ou ``bottom``) a depender do conteúdo. Ex: Caso seja um pop-up de cookie, é interessante que seja omitido o atributo ``top`` para que o pop-up fique alinhado em baixo.
 
-### Unidades
+## Unidades
 
 Existem diversas unidades de medida no css. Dentre elas temos:
 
@@ -164,7 +138,7 @@ Existem diversas unidades de medida no css. Dentre elas temos:
 * ``em`` \
     É uma medida relativa ao tamamnho do elemento pai.
 
-### Background
+## Background
 
 Essa propiedade é usada para definir o fundo de um elemento, como imagem, cor, tamanho etc. Temos as seguintes propiedades: (algumas auto explicativas)
 
@@ -206,11 +180,11 @@ Essa propiedade é usada para definir o fundo de um elemento, como imagem, cor, 
 * ``background-positon: <x> <y>;`` \
     Definie a posição inicial da imagem nos eixos x e y.
 
-### Pseudo classes
+## Pseudo classes
 
 todo
 
-#### Estados
+### Estados
 
 Permite definir o estilo de diferentes estados do html. Ex:
 
@@ -226,7 +200,7 @@ Permite definir o estilo de diferentes estados do html. Ex:
 * ```:visited``` \
     Para links que já foram visitados
 
-#### Seletores
+### Seletores
 
 * ```:first-child``` \
     Para selecionar o primeiro filho de um elemento.
@@ -243,7 +217,41 @@ Permite definir o estilo de diferentes estados do html. Ex:
   * ``3n`` \
     De 3 em 3 números (podendo ser colocado outos valores.)
 
-### Pseudo elementos
+* ``[Atributo]`` \
+    Seleciona somente os elementos que tiverem o atributo especificado\
+    **Ex:**
+
+    ```css
+    [required] {
+        background-color: tomato;
+    }
+    ```
+
+    Selecionando somente os inputs com required e pintando-os na cor tomato.
+
+    **Ex2:**
+
+    ```css
+    [href^="#"] {
+        background-color: aqua;
+    }
+    ```
+
+    Isso diz que todos os elementos com o ``href`` que começarem com um ``#`` (**utiliza-se o ``^`` para indicar o começo e ``$`` para o fim**) terão o fundo pintado de aqua
+
+* ``+`` \
+    O mais é utilizado para selecionar apenas elementos que são seguidos por outros. \
+    **Ex:**
+
+    ```css
+    p + p {
+        margin-top: 20px;
+    }
+    ```
+
+    Isso diz para **selecionar todos os ``p`` que são seguidos por outros ``p``**
+
+## Pseudo elementos
 
 todo
 
@@ -256,9 +264,29 @@ todo
 * ```::first-letter``` \
     Para estilizar a primeira letra de um conteúdo.
 
-### Responsivo
+## Media queries
 
-#### meta viewport
+Uma media querie é uma função que só permite que o código dentro dela seja executado caso a condição seja verdadeira. Tendo a seguinte sintáxe:
+
+```css
+@media (  ) { }
+```
+
+### Modo claro e escuro
+
+É possível definir um estilo para o modo claro e escuro do site, com base na preferencia do sistema do usuário, utilizando a propiedade ``prefers-color-scheme``
+
+```css
+@media (prefers-color-scheme: dark) {
+    /* ... */
+}
+```
+
+### Responsividade
+
+Para tornar uma página responsiva é preciso
+
+#### Meta Viewport
 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -266,13 +294,9 @@ todo
 
 A meta tag viewport é uma tag muito útil que padroniza o tamanho dos elementos em difentes telas, ou seja, mesmo que visto em uma tela de alta densidade, ela parecerá a mesma na tela de um celular.
 
-#### Media queries
+#### Breakpoints
 
-Uma media querie é uma função que só permite que o código dentro dela seja executado caso a condição seja verdadeira. Tendo a seguinte sintáxe:
-
-```css
-@media (max-width: 500px) { }
-```
+São pontos onde a tela deverá quebrada para ter outra forma. Exemplos:
 
 > O conteúdo só será executado caso a largura da tela seja **menor que 500px**
 
@@ -303,6 +327,6 @@ Para tornar responsivo um container grid, podemos utilizar as seguinte tecnicas:
 
     Onde ``auto-fit`` fará com que seja criado o máximo de colunas possíveis, porém, respeitando o valor seguinte: ``minmax(300px, 1fr)`` que indica que uma coluna terá de ter no mínimo 300px e, se tiver espaço, deverá distribuir igualmente o espaço restante.
 
-#### object-fit
+##### object-fit
 
 ``object-fit`` é um atributo que define que o conteúdo seja ajustado sem distorções conforme a largura e altura do elemento pai. Sendo muito útil com imagens, tendo um efeito parecido ao ``background-size``
