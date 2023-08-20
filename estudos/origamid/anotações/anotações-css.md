@@ -10,7 +10,7 @@ Anoto as coisas do jeito que entendo. Caso tenha algo errado, por favor, abra um
 
 ## Sumário
 
-* [Descibertas](#decobertas-css)
+* [Descobertas](#decobertas-css)
 * [Display](#display)
 * [Imagens](#imagens)
   * [Informações](#informações-úteis)
