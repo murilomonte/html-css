@@ -1,11 +1,26 @@
 @charset "UTF-8";
 
 :root {
-    --fundo: #f7f7f7;
-    --texto: #c6c6c6;
-    --vermelho: #ee2211;
+    --fundo-1: #f7f7f7;
+    --fundo-2: #ffffff;
+    --texto-1: #c6c6c6;
+    --texto-2: #000000;
+    --subtitulo: #00000033;
+    --cor-primaria: #ee2211;
+    --cor-primaria-escura: #900;
+    --onda: url('img/onda-clara.svg');
 
     --fonte: Arial, Helvetica, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --fundo-1: #111111;
+        --fundo-2: #000000;
+        --subtitulo: #ffffff33;
+        --texto-2: #ffffff;
+        --onda: url('img/onda-escura.svg')
+    }
 }
 
 * {
@@ -24,22 +39,19 @@ body {
     height: 100vh;
     width: 100vw;
 
-    background-color: var(--fundo);
+    background-color: var(--fundo-1);
     font-family: var(--fonte);
+    color: var(--texto-2);
 }
 
 .header {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-
     display: grid;
     place-items: center;
 
     padding: 70px;
 }
 
-.header-logo img {
+.header-logo > svg {
     margin-bottom: 50px;
 }
 
@@ -53,15 +65,15 @@ body {
 
 
 .header-nav a {
-    background-color: white;
-    color: black;
+    background-color: var(--fundo-2);
+    color: var(--texto-2);
     padding: 15px 35px;
     border-radius: 4px;
     border: 2px solid transparent;
 }
 
 .header-nav a:hover {
-    border-color: #e21;
+    border-color: var(--cor-primaria);
 }
 
 .main {
@@ -88,7 +100,7 @@ body {
     gap: 25px;
 
     padding: 40px;
-    background-color: white;
+    background-color: var(--fundo-2);
 }
 
 .main-about::before {
@@ -99,7 +111,7 @@ body {
 
     height: 3px;
     width: 50px;
-    background-color: var(--vermelho);
+    background-color: var(--cor-primaria);
 }
 
 .main-about h1 {
@@ -112,18 +124,18 @@ body {
 }
 
 .main-about a {
-    background-color: var(--vermelho);
+    background-color: var(--cor-primaria);
     color: white;
     padding: 10px 20px;
     border-radius: 3px;
 }
 
 .main-about a:hover {
-    background-color: #900;
+    background-color: var(--cor-primaria-escura);
 }
 
 .main-vantagens-titulo {
-    background-image: url('img/onda.svg');
+    background-image: var(--onda);
     background-repeat: space;
 
     display: grid;
@@ -131,7 +143,7 @@ body {
     text-align: end;
     padding: 20px;
 
-    color: var(--texto);
+    color: var(--subtitulo);
     font-size: 40px;
 }
 
@@ -140,7 +152,7 @@ body {
     /* gap: 25px; */
     padding: 50px;
 
-    background-color: white;
+    background-color: var(--fundo-2);
 }
 
 .main-vantagens-item {
@@ -155,7 +167,7 @@ body {
 }
 
 .main-vantagens-item:nth-child(odd) {
-    background-color: #f7f7f7;
+    background-color: var(--fundo-1);
 }
 
 
@@ -171,7 +183,7 @@ body {
     display: flex;
     justify-content: center;
 
-    background-color: white;
+    background-color: var(--fundo-2);
     padding: 50px;
     font-size: 20px;
     font-weight: bold;
