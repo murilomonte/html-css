@@ -3,7 +3,7 @@
 ## O repositório
 
 Aqui estão os arquivos dos meus estudos em html e css!\
-Todos estão concentrados na pasta [estudos](./estudos/) separados por fonte e assunto
+Todos estão concentrados na pasta [estudos](./estudos/) separados por fonte e assunto.
 
 ## Navegação
 
@@ -22,10 +22,10 @@ Curso em vídeo
 
 Origamid
 
-* [Primeiro Position](https://murilomonte.github.io/html-css/estudos/origamid/projetos/exercicios/exerc%C3%ADcio%20position/index.html)
-* [Primeiro Position (Refatorado)](https://murilomonte.github.io/html-css/estudos/origamid/projetos/exercicios/exerc%C3%ADcio%20position%20(refatorado)/index.html)
+* [Exercício Position](https://murilomonte.github.io/html-css/estudos/origamid/projetos/exercicios/exerc%C3%ADcio%20position/index.html)
+* [Exercício Position (Refatorado)](https://murilomonte.github.io/html-css/estudos/origamid/projetos/exercicios/exerc%C3%ADcio%20position%20(refatorado)/index.html)
 * [Flexblog](https://murilomonte.github.io/html-css/estudos/origamid/projetos/flexblog/index.html)
-* [Projeto portfólio](https://murilomonte.github.io/html-css/estudos/origamid/projetos/projeto-portfolio/index%20(refatorado).html)
+* [Projeto portfólio](https://murilomonte.github.io/html-css/estudos/origamid/projetos/projeto-portfolio/index.html)
 
 ## Outros projetos
 
