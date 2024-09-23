@@ -13,6 +13,7 @@ Origamid
 
 * [HTML](./estudos/origamid/anotações/anotações-html.md)
 * [CSS](./estudos/origamid/anotações/anotações-css.md)
+* [Javascript](./estudos/origamid/anotações/anotações-javascript.md)
 
 Curso em vídeo
 
