@@ -1,0 +1,13 @@
+html {
+    cursor: none;
+}
+
+.circulo {
+    height: 16px;
+    width: 16px;
+    background-color: #999;
+    border-radius: 50%;
+    font-size: .8rem;
+    text-align: center;
+    position: absolute;
+}
