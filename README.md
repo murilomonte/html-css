@@ -2,31 +2,16 @@
 
 ## O repositório
 
-Aqui estão os arquivos dos meus estudos em html e css!\
-Todos estão concentrados na pasta [estudos](./estudos/) separados por fonte e assunto.
-
-## Navegação
-
-### Anotações
-
-Origamid
-
-* [HTML](./estudos/origamid/anotações/anotações-html.md)
-* [CSS](./estudos/origamid/anotações/anotações-css.md)
-* [Javascript](./estudos/origamid/anotações/anotações-javascript.md)
-
-Curso em vídeo
-
-* [HTML e CSS](./estudos/curso-em-video/anotacoes-cev.md)
+Aqui estão os arquivos dos meus estudos em html e css!
 
 ## Projetos
 
 Origamid
 
-* [Exercício Position](https://murilomonte.github.io/html-css/estudos/origamid/projetos/exercicios/exerc%C3%ADcio%20position/index.html)
-* [Exercício Position (Refatorado)](https://murilomonte.github.io/html-css/estudos/origamid/projetos/exercicios/exerc%C3%ADcio%20position%20(refatorado)/index.html)
-* [Flexblog](https://murilomonte.github.io/html-css/estudos/origamid/projetos/flexblog/index.html)
-* [Projeto portfólio](https://murilomonte.github.io/html-css/estudos/origamid/projetos/projeto-portfolio/index.html)
+* [Exercício Position](https://murilomonte.github.io/html-css/projetos/origamid/html-css-iniciantes/exe-position)
+* [Exercício Position (Refatorado)](https://murilomonte.github.io/html-css/projetos/origamid/html-css-iniciantes/exe-position-refatorado)
+* [Flexblog](https://murilomonte.github.io/html-css/projetos/origamid/flexbox/flexblog)
+* [Projeto portfólio](https://murilomonte.github.io/html-css/projetos/origamid/html-css-iniciantes/projeto-portfolio)
 
 ## Outros projetos
 
