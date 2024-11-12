@@ -10,8 +10,8 @@ Origamid
 
 * [Exercício Position](https://murilomonte.github.io/html-css/projetos/origamid/html-css-iniciantes/exe-position)
 * [Exercício Position (Refatorado)](https://murilomonte.github.io/html-css/projetos/origamid/html-css-iniciantes/exe-position-refatorado)
-* [Flexblog](https://murilomonte.github.io/html-css/projetos/origamid/flexbox/flexblog)
 * [Projeto portfólio](https://murilomonte.github.io/html-css/projetos/origamid/html-css-iniciantes/projeto-portfolio)
+* [Flexblog](https://murilomonte.github.io/html-css/projetos/origamid/flexbox/flexblog)
 
 ## Outros projetos
 
